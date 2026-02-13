@@ -1,6 +1,6 @@
 import { CiLocationOn } from "react-icons/ci";
 import { BiCart } from "react-icons/bi";
-import { FaCaretDown } from "react-icons/fa";
+import { IoMdSearch } from "react-icons/io";
 
 const TopNav = () => {
   return (
@@ -21,8 +21,8 @@ const TopNav = () => {
           <span className="text-xsl font-bold ">Nepal</span>
         </p>
       </div>
-      <div className=" rounded-sm bg-white text-black w-[60vw]">
-        <select className="w-15 rounded-sm py-2 px-2 bg-gray-300 hover:bg-gray-400 text-black">
+      <div className="flex items-center rounded-sm bg-white text-black w-[60vw]">
+        <select className="w-[10%] rounded-l-sm  py-2 px-2 bg-gray-200  text-black">
           <option value="">All</option>
           <option value="">Arts & Craft</option>
           <option value="">B</option>
@@ -30,11 +30,13 @@ const TopNav = () => {
         </select>
 
         <input
-          className="border p-2 w-[85%]"
+          className=" py-1.5 px-3 w-[84%] font-semibold border-none"
           type="text"
           placeholder="Search Amazon"
         />
-        <button>Ser</button>
+        <button className="bg-[#febd69]  items-center w-[6%] h-[100%] py-1 rounded-r-sm  px-2 text-gray-800">
+          <IoMdSearch size={31} />
+        </button>
       </div>
       <div className="hover:border rounded-xs px-2 h-12 leading-4 flex flex-col justify-center ">
         <p className="text-sm text-gray-200 ">Hello, sign in</p>
