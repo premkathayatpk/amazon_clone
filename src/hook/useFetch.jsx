@@ -8,7 +8,7 @@ const useFetch = () => {
   const getProducts = async () => {
     try {
       setIsLoading(true);
-      let res = await fetch("https://dummyjson.com/products");
+      let res = await fetch("https://dummyjson.com/products?limit=197");
       res = await res.json();
       setProducts(res.products);
 

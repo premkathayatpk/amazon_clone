@@ -7,7 +7,7 @@ const App = () => {
   return (
     <div>
       <Header />
-      <div className="min-h-140 bg-gray-200">
+      <div className="min-h-140 bg-[#e3e6e6]">
         <AppRoutes />
       </div>
 
